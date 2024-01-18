@@ -47,7 +47,7 @@ export const Container = styled.div`
   left: 50%;
   padding: 1.6rem 3.2rem;
   border-radius: 20rem;
-  filter: drop-shadow(0px 4px 4px ${({ theme }) => theme.COLORS.PINK});
+  filter: drop-shadow(0px 4px 4px ${({ theme }) => theme.COLORS.VIOLET});
 
   &.show {
     opacity: 1;
@@ -60,7 +60,7 @@ export const Container = styled.div`
   }
 
   svg {
-    filter: drop-shadow(0px 4px 4px ${({ theme }) => theme.COLORS.PINK});
+    filter: drop-shadow(0px 4px 4px ${({ theme }) => theme.COLORS.VIOLET});
     font-size: 3.2rem;
   }
 

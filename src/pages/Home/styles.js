@@ -26,6 +26,7 @@ export const Container = styled.div`
       flex-direction: column;
       align-items: center;
       margin: 8vh -13vw 0 -8vw;
+      padding-bottom: 8vh;
       gap: 8vh;
 
       background: ${({ theme }) => theme.COLORS.BGGRADIENT};
@@ -38,7 +39,7 @@ export const Container = styled.div`
           border-radius: 50%;
           overflow: hidden;
           box-shadow: -16px 16px 32px 0px
-            ${({ theme }) => theme.COLORS.BACKGROUND};
+            ${({ theme }) => theme.COLORS.VIOLET};
 
           &::before {
             content: "";
@@ -88,12 +89,12 @@ export const Container = styled.div`
 
             li,
             h2 {
-              text-shadow: 0px 4px 4px ${({ theme }) => theme.COLORS.PINK};
+              text-shadow: 0px 4px 4px ${({ theme }) => theme.COLORS.VIOLET};
             }
 
             li svg {
               filter: drop-shadow(
-                0px 4px 4px ${({ theme }) => theme.COLORS.PINK}
+                0px 4px 4px ${({ theme }) => theme.COLORS.VIOLET}
               );
               color: ${({ theme }) => theme.COLORS.VIOLET};
             }
