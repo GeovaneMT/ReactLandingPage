@@ -9,7 +9,7 @@ export const Container = styled.div`
     > div > p > span {
       font-weight: bold;
       font-size: ${({ theme }) => theme.COLORS.FSSPAN};
-      color: ${({ theme }) => theme.COLORS.CYAN};
+      color: ${({ theme }) => theme.COLORS.VIOLET};
     }
 
     > div:nth-child(2),

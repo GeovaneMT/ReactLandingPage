@@ -1,29 +1,29 @@
 import {
-  PiInstagramLogo,
-  PiWhatsappLogo,
-  PiLinkedinLogo,
-  PiGithubLogo,
+  PiInstagramLogoFill,
+  PiWhatsappLogoFill,
+  PiBookOpenTextFill,
+  PiFacebookLogoFill,
 } from "react-icons/pi"
 
 export const socialIcons = [
   {
-    icon: <PiWhatsappLogo />,
+    icon: <PiWhatsappLogoFill />,
     title: " Whatsapp",
-    link: "https://api.whatsapp.com/send?phone=5519996187178&text=Ol%C3%A1,%20Vi%20Seu%20Portfolio%20e%20Gostaria%20De%20Saber%20Mais",
+    link: "https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%2F%3Fphone%3D5519997844692%26type%3Dphone_number%26app_absent%3D0&e=AT1HfdqUR-Y_v9Nd4m8MmV8RCsxZndM4Ph9Xxm_GmSLd7TyXVciwO2ybhVw_WVS3Q27hMmkL5qxTvcWRFsVIzC9KlngaslMuqpA6lRQ",
   },
   {
-    icon: <PiLinkedinLogo />,
-    title: " Linkedin",
-    link: "https://www.linkedin.com/in/gmtgeovane/",
+    icon: <PiBookOpenTextFill />,
+    title: " Catálogo",
+    link: "/Contact",
   },
   {
-    icon: <PiGithubLogo />,
-    title: " Github",
-    link: "https://github.com/GeovaneMT",
+    icon: <PiFacebookLogoFill />,
+    title: " Facebook",
+    link: "https://www.facebook.com/BeladonasSemijoias/",
   },
   {
-    icon: <PiInstagramLogo />,
+    icon: <PiInstagramLogoFill />,
     title: " Instagram",
-    link: "https://www.instagram.com/gmtgeovane/",
+    link: "https://www.instagram.com/beladonassemijoias",
   },
 ]

@@ -27,12 +27,8 @@ export const Container = styled.div`
       align-items: center;
       margin: 8vh -13vw 0 -8vw;
       gap: 8vh;
-      
-      background: linear-gradient(
-        180deg,
-        rgba(2, 15, 32, 0),
-        rgba(2, 15, 32, 1) 90%
-      );
+
+      background: ${({ theme }) => theme.COLORS.BGGRADIENT};
 
       > div {
         &:first-child {
@@ -41,7 +37,8 @@ export const Container = styled.div`
           height: 24rem;
           border-radius: 50%;
           overflow: hidden;
-          box-shadow: -16px 16px 32px 0px #020f20;
+          box-shadow: -16px 16px 32px 0px
+            ${({ theme }) => theme.COLORS.BACKGROUND};
 
           &::before {
             content: "";
@@ -53,9 +50,9 @@ export const Container = styled.div`
               ${({ theme }) => theme.COLORS.BACKGROUND},
               ${({ theme }) => theme.COLORS.BACKGROUND},
               ${({ theme }) => theme.COLORS.BACKGROUND},
-              ${({ theme }) => theme.COLORS.BLUE},
-              ${({ theme }) => theme.COLORS.CYAN},
-              ${({ theme }) => theme.COLORS.BLUE},
+              ${({ theme }) => theme.COLORS.PINK},
+              ${({ theme }) => theme.COLORS.ROSE},
+              ${({ theme }) => theme.COLORS.PINK},
               ${({ theme }) => theme.COLORS.BACKGROUND},
               ${({ theme }) => theme.COLORS.BACKGROUND},
               ${({ theme }) => theme.COLORS.BACKGROUND},
@@ -84,16 +81,24 @@ export const Container = styled.div`
             li {
               display: flex;
               gap: 4px;
+              span {
+                ${({ theme }) => theme.COLORS.PINK};
+              }
             }
 
             li,
             h2 {
-              text-shadow: 0px 4px 4px #020f20;
+              text-shadow: 0px 4px 4px ${({ theme }) => theme.COLORS.PINK};
             }
 
             li svg {
-              filter: drop-shadow(0px 4px 4px #020f20);
-              color: ${({ theme }) => theme.COLORS.CYAN};
+              filter: drop-shadow(
+                0px 4px 4px ${({ theme }) => theme.COLORS.PINK}
+              );
+              color: ${({ theme }) => theme.COLORS.VIOLET};
+            }
+            li:last-child svg {
+              opacity:0
             }
           }
         }

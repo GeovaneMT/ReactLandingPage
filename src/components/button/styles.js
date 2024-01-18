@@ -34,7 +34,7 @@ export const Container = styled.button`
     align-items: center;
     border-radius: inherit;
     color: ${({ theme }) => theme.COLORS.WHITE};
-    background: ${({ theme }) => theme.COLORS.BACKGROUND};
+    background: ${({ theme }) => theme.COLORS.VIOLET};
     z-index: 1;
 
     &::before {

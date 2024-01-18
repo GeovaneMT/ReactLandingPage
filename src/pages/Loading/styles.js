@@ -20,7 +20,7 @@ export const Container = styled.div`
   }
 
   .loader div {
-    background: ${({ theme }) => theme.COLORS.CYAN};
+    background: ${({ theme }) => theme.COLORS.VIOLET};
     width: 16px;
     height: 32px;
     margin-left: 10px;

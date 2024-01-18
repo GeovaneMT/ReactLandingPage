@@ -6,6 +6,7 @@ import reactjs from "../../assets/Icons/reactjs.svg"
 
 export const Item = ({
   icon = reactjs,
+  iconAlt = "",
   title = "React ",
   text1 = "Tecnologia Front End para ",
   span1 = "Modularização de Componentes ",
@@ -37,7 +38,13 @@ export const Item = ({
       </main>
       <div>
         <div>
-          <img src={icon} alt={title} />
+          {icon ? (
+            <>
+              <img src={icon} alt={title} />
+            </>
+          ) : (
+            <p>{iconAlt}</p>
+          )}
         </div>
       </div>
     </Container>

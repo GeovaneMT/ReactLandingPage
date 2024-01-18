@@ -12,28 +12,37 @@ export const Button = ({
   to = "",
   ...rest
 }) => {
+  const isExternalLink = to.startsWith("http") || to.startsWith("//")
 
-  const iconStyles = {
-    fontSize: iconSize,
-    color: iconColor,
-  }
-  
-  return to ? (
+  return (
     <Container>
-      <Link target="_blank" rel="noreferrer" to={to} {...rest}>
-        <span style={iconStyles}>
-          {icon}
-          <PiArrowCircleRight />
-        </span>
-        <p>{title}</p>
-        <p>{fixedTitle}</p>
-      </Link>
-    </Container>
-  ) : (
-    <Container type="button" {...rest}>
-      <span style={iconStyles}>{icon}</span>
-      <p>{title}</p>
-      <p>{fixedTitle}</p>
+      {to ? (
+        isExternalLink ? (
+          <a href={to} target="_blank" rel="noopener noreferrer" {...rest}>
+            <span style={{ fontSize: iconSize, color: iconColor }}>
+              {icon}
+              <PiArrowCircleRight />
+            </span>
+            <p>{title}</p>
+            <p>{fixedTitle}</p>
+          </a>
+        ) : (
+          <Link to={to} {...rest}>
+            <span style={{ fontSize: iconSize, color: iconColor }}>
+              {icon}
+              <PiArrowCircleRight />
+            </span>
+            <p>{title}</p>
+            <p>{fixedTitle}</p>
+          </Link>
+        )
+      ) : (
+        <Container type="button" {...rest}>
+          <span style={{ fontSize: iconSize, color: iconColor }}>{icon}</span>
+          <p>{title}</p>
+          <p>{fixedTitle}</p>
+        </Container>
+      )}
     </Container>
   )
 }

@@ -26,7 +26,7 @@ export const Container = styled.div`
 
     div:nth-child(1) {
       font-size: ${({ theme }) => theme.COLORS.FSTITLE};
-      color: ${({ theme }) => theme.COLORS.CYAN};
+      color: ${({ theme }) => theme.COLORS.VIOLET};
       justify-content: start;
       font-weight: bold;
       opacity: 0;
@@ -97,7 +97,19 @@ export const Container = styled.div`
 
   span {
     font-style: italic;
-    color: ${({ theme }) => theme.COLORS.CYAN};
+    color: ${({ theme }) => theme.COLORS.VIOLET};
+  }
+
+  p {
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    svg {
+      width: 80%;
+      height: 80%;
+    }
   }
 
   img {

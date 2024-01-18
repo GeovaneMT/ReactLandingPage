@@ -11,10 +11,15 @@ import { Footer } from "../../components/footer"
 import { ButtonsContact } from "../../components/buttonsContact"
 
 //general assets
-import profile from "../../assets/images/profile.jpg"
+import profile from "../../assets/images/profile.png"
 
 //react icons / phosphor icons
-import { PiUsersThree, PiCodeBlock, PiGear, PiBuildings } from "react-icons/pi"
+import {
+  PiShootingStarFill,
+  PiShoppingCartFill,
+  PiTruckFill,
+  PiStorefrontFill,
+} from "react-icons/pi"
 
 export const Home = () => {
 
@@ -26,27 +31,32 @@ export const Home = () => {
         <div>
           <div>
             <div>
-              <img src={profile} alt="Foto de perfil de Geovane" />
+              <img src={profile} alt="Logotipo Bela Dona Semijoias" />
             </div>
           </div>
           <div>
-            <Header text="Olá, eu sou " span="Geovane M.T" />
+            <Header text="Bem vindo a " span="Bela Dona" span2="Semijoias" />
             <ul>
               <li>
-                <PiUsersThree />
-                Engenheiro de Software
+                <PiShootingStarFill />
+                Joias e Semijoias para você <span>brilhar!</span>
               </li>
               <li>
-                <PiCodeBlock />
-                Desenv. Full Stack
+                <PiShoppingCartFill />
+                Vendas para <span>varejo</span>
               </li>
               <li>
-                <PiGear />
-                UI | UX Designer
+                <PiTruckFill />
+                Enviamos para <span>todo o Brasil</span>
               </li>
               <li>
-                <PiBuildings />
-                Administrador
+                <PiStorefrontFill />
+                Loja física:
+                <span>Rua São Pedro 622</span>
+              </li>
+              <li>
+                <PiStorefrontFill />
+                <span>Centro Vargem G.S - SP</span>
               </li>
             </ul>
           </div>

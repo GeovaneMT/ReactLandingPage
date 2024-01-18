@@ -14,7 +14,7 @@ export const Container = styled.div`
 
       > span {
         font-weight: bold;
-        color: ${({ theme }) => theme.COLORS.CYAN};
+        color: ${({ theme }) => theme.COLORS.VIOLET};
       }
 
       &:nth-child(2) {

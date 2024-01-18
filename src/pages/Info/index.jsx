@@ -10,6 +10,13 @@ import anhanguera from "../../assets/Icons/anhanguera.png"
 import rocket from "../../assets/Icons/rocket.svg"
 import matera from "../../assets/Icons/matera.webp"
 
+//react icons / phosphor icons
+import {
+  PiShootingStarFill,
+  PiEyeFill,
+  PiSealCheckFill 
+} from "react-icons/pi"
+
 export const Info = () => {
   return (
     <Container>
@@ -17,70 +24,75 @@ export const Info = () => {
 
       <Menu />
       <main>
-        <Header text="Você aqui é uma grande" span="Alegria" />
+        <Header text="Revele seu" span="Brilho!" />
 
         <div>
-          <Anchor text="Sobre mim" />
+          <Anchor text="Manifesto" />
           <p>
-            <span>Sua visita é muito importante para mim, obrigado!</span>
-            <br />
-            <br />
-            Sou um entusiasta por Fotografia, Carros e Games.
+            <span>
+              A Bela Dona Semijoias destaca-se por oferecer acessórios de alta
+              qualidade a preços acessíveis, expressando a beleza única de cada
+              mulher.
+              <br />
+              <br />
+              Com uma abordagem personalizada e presença ativa nas redes
+              sociais, a marca incentiva as clientes a expressarem confiança e
+              autenticidade, convidando-as a serem protagonistas de suas
+              histórias.
+            </span>
           </p>
 
-          <p>
-            Atualmente estou cursando <span>Engenharia de Software</span> na
-            Anhanguera, e <span>Desenvolvimento Full Stack</span> na Rocketseat:
-          </p>
+          <p></p>
         </div>
 
         <Slider
-          anchor="Formação"
+          anchor="Missão, Visão e Valores"
           itemsConfig={[
             {
-              icon: anhanguera,
-              title: "Eng. Software",
-              text1: "Bacharelado Anhanguera com o objetivo de ",
-              span1: "aprender todas as etapas ",
+              icon: "",
+              iconAlt: <PiShootingStarFill />,
+              title: "Valores",
+              text1: "Priorizamos estabelecer relações de ",
+              span1: "confiança, confiabilidade e respeito. ",
               br1: true,
-              text2: "do ",
-              span2: "desenvolvimento de um software. ",
+              text2: "inspiramos as mulheres a serem ",
+              span2: "protagonistas de suas histórias. ",
               br2: true,
               text3: "",
               span3: "",
               br3: true,
             },
             {
-              icon: rocket,
-              title: "Rocketseat",
-              text1: "Bootcamp de 1 ano aprendendo ",
-              span1: "Programação baseada em JS. ",
-              br1: false,
-              text2: " Isso inclui: ",
-              span2:
-                "Javascript, React, Node, SQL, Frameworks e bibliotecas JS. ",
-              br2: false,
-              text3: "",
-              span3: "",
-              br3: false,
-            },
-            {
-              icon: matera,
-              title: "Matera Camp",
-              text1:
-                "Bootcamp da Matera de 1 semana, com o objetivo de aprender sobre ",
-              span1: "Segurança da Informação ",
-              br1: false,
-              text2: "e ",
-              span2: "Cloud. ",
+              icon: "",
+              iconAlt: <PiSealCheckFill  />,
+              title: "Missão",
+              text1: "Oferecemos uma variedade de ",
+              span1: "semijoias de alta qualidade. ",
+              br1: true,
+              text2: "prezando sempre proporcionar ",
+              span2: "elegância e acessibilidade ",
               br2: true,
               text3: "",
               span3: "",
+              br3: true,
+            },
+            {
+              icon: "",
+              iconAlt: <PiEyeFill />,
+              title: "Visão",
+              text1: "Nossa visão futura e objetivo, é ser a ",
+              span1: "principal referência em semijoias. ",
+              br1: false,
+              text2: "conquistando a confiança regional e ",
+              span2: "expandindo nossa presença nacional  ",
+              br2: true,
+              text3: "através de um forte ",
+              span3: "e-commerce.",
               br3: true,
             },
           ]}
         />
-      <Footer />
+        <Footer />
       </main>
     </Container>
   )

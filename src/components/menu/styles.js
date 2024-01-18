@@ -33,7 +33,7 @@ export const MenuIcon = styled.span`
 `
 
 export const Container = styled.div`
-  background: ${({ theme }) => theme.COLORS.BLUE};
+  background: ${({ theme }) => theme.COLORS.VIOLET};
 
   display: flex;
   position: fixed;
@@ -47,7 +47,7 @@ export const Container = styled.div`
   left: 50%;
   padding: 1.6rem 3.2rem;
   border-radius: 20rem;
-  filter: drop-shadow(0px 4px 4px #020f20);
+  filter: drop-shadow(0px 4px 4px ${({ theme }) => theme.COLORS.PINK});
 
   &.show {
     opacity: 1;
@@ -60,7 +60,7 @@ export const Container = styled.div`
   }
 
   svg {
-    filter: drop-shadow(0px 4px 4px #020f20);
+    filter: drop-shadow(0px 4px 4px ${({ theme }) => theme.COLORS.PINK});
     font-size: 3.2rem;
   }
 

@@ -1,17 +1,19 @@
 export default {
   COLORS: {
     //colors
-    BACKGROUND: "#020F20",
+    BACKGROUND: "hsla(320, 50%, 75%, 1)",
 
-    WHITE: "#E9F0F6",
-    WHITE_50: "hsla(210, 53%, 92%, .5)",
+    WHITE: "hsla(320, 25%, 100%, 1)",
+    WHITE_50: "hsla(320, 25%, 100%, 0.5)",
 
-    BLUE: "#0161C2",
-    CYAN: "#03BBFA",
+    PINK: "hsla(320, 100%, 75%, 1)",
+    ROSE: "hsla(320, 70%, 60%, 1)",
+    VIOLET: "hsla(320, 25%, 50%, 1)",
 
-    GRADIENT: "linear-gradient(-45deg, #020F20 0%, rgba(1,97,194,1) 100%)",
+    GRADIENT:
+      "linear-gradient(45deg, hsla(320, 70%, 60%, 1) 0%, hsla(320, 100%, 75%, 1) 100%)",
     BGGRADIENT:
-      "linear-gradient(180deg, rgba(2, 15, 32, 0.00) 75%, #020F20)",
+      "linear-gradient(180deg, hsla(320, 70%, 60%, 0) 75%, hsla(320, 50%, 75%, 1))",
 
     //font sizes
     FSBODY: "clamp(14px, 4vw, 16px)",

@@ -21,7 +21,7 @@ export const Container = styled.div`
         //here//
         position: relative;
         overflow: hidden;
-        box-shadow: -16px 16px 32px 0px #020f20;
+        box-shadow: -16px 16px 32px 0px ${({ theme }) => theme.COLORS.VIOLET};
         display: flex;
         align-items: center;
         justify-content: center;
@@ -36,9 +36,9 @@ export const Container = styled.div`
             ${({ theme }) => theme.COLORS.BACKGROUND},
             ${({ theme }) => theme.COLORS.BACKGROUND},
             ${({ theme }) => theme.COLORS.BACKGROUND},
-            ${({ theme }) => theme.COLORS.BLUE},
-            ${({ theme }) => theme.COLORS.CYAN},
-            ${({ theme }) => theme.COLORS.BLUE},
+            ${({ theme }) => theme.COLORS.PINK},
+            ${({ theme }) => theme.COLORS.ROSE},
+            ${({ theme }) => theme.COLORS.PINK},
             ${({ theme }) => theme.COLORS.BACKGROUND},
             ${({ theme }) => theme.COLORS.BACKGROUND},
             ${({ theme }) => theme.COLORS.BACKGROUND},
@@ -53,10 +53,9 @@ export const Container = styled.div`
           width: 95%;
           height: 95%;
           border-radius: 20px;
-          border: 1px solid ${({ theme }) => theme.COLORS.CYAN};
-;
+          border: 1px solid ${({ theme }) => theme.COLORS.ROSE};
           background: ${({ theme }) => theme.COLORS.BACKGROUND};
-          padding: .2rem;
+          padding: 0.2rem;
         }
         //here//
       }
