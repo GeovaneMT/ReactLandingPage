@@ -14,17 +14,19 @@ export const ButtonsContact = ({
   header = "Sinta-se à vontade para entrar em ",
   span = "Contato",
   span3 = "",
+  backgroundColor = "",
   ...rest
 }) => {
   effect()
 
   return (
-    <Container>
+    <Container {...rest}>
       <main>
         <Header text={header} span={span} span3={span3} />
         <div id="cards">
           {socialIcons.map((button, index) => (
             <Button
+              backgroundColor={backgroundColor}
               key={index}
               icon={button.icon}
               title={button.title}

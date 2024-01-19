@@ -23,6 +23,7 @@ export const Catalog = () => {
       <Anchor text="Contato" />
       <main>
         <ButtonsContact
+          backgroundColor={({ theme }) => theme.COLORS.GRADIENTDARK}
           header="Confira nosso "
           span=""
           span3="Catálogo"

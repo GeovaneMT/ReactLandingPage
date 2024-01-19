@@ -2,7 +2,8 @@ import styled from "styled-components"
 
 export const Container = styled.button`
   color: ${({ theme }) => theme.COLORS.WHITE};
-  background: ${({ theme }) => theme.COLORS.GRADIENT};
+      background: ${({ $backgroundColor, theme }) =>
+        $backgroundColor || theme.COLORS.GRADIENT};
   display: flex;
   gap: 2.4vw;
   width: 75%;
@@ -49,7 +50,8 @@ export const Container = styled.button`
       transition: all 0.6s ease-in-out;
 
       z-index: -1;
-      background: ${({ theme }) => theme.COLORS.GRADIENT};
+      background: ${({ $backgroundColor, theme }) =>
+        $backgroundColor || theme.COLORS.GRADIENT};
     }
 
     > p {
@@ -81,13 +83,14 @@ export const Container = styled.button`
       &:last-child {
         opacity: 0;
         width: 0;
-        animation:none;
+        animation: none;
       }
     }
     //icon changes ^
   }
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     //txt changes
     a {
       transform: scale(1);

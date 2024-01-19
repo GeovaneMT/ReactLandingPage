@@ -9,13 +9,14 @@ export const Button = ({
   icon = "",
   iconSize = "2.4rem",
   iconColor = "white",
+  backgroundColor = "",
   to = "",
   ...rest
 }) => {
   const isExternalLink = to.startsWith("http") || to.startsWith("//")
 
   return (
-    <Container>
+    <Container $backgroundColor={backgroundColor} {...rest}>
       {to ? (
         isExternalLink ? (
           <a href={to} target="_blank" rel="noopener noreferrer" {...rest}>
