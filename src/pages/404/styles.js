@@ -4,8 +4,17 @@ export const Container = styled.div`
   height: 100%;
   overflow: hidden;
 
-  > main {
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+    background: ${({ theme }) => theme.COLORS.BGGRADIENT};
+  }
 
+  > main {
     > h2 {
       display: flex;
       flex-direction: column-reverse;

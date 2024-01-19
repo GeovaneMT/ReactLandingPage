@@ -19,12 +19,13 @@ import {
 export const Catalog = () => {
   return (
     <Container>
-      <Menu />
+      <Menu $backgroundColor={({ theme }) => theme.COLORS.PINK} />
       <Anchor text="Contato" />
       <main>
         <ButtonsContact
           header="Confira nosso "
-          span="Catálogo"
+          span=""
+          span3="Catálogo"
           socialIcons={[
             {
               icon: <PiWhatsappLogoFill />,

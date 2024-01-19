@@ -9,8 +9,12 @@ export const Container = styled.h2`
     display: block;
     font-weight: bold;
     color: ${({ theme }) => theme.COLORS.VIOLET};
-    &:last-child {
+    &:nth-child(2) {
       color: ${({ theme }) => theme.COLORS.ROSE};
+      font-size: ${({ theme }) => theme.COLORS.FSSPAN};
+    }
+    &:last-child {
+      color: ${({ theme }) => theme.COLORS.PINK};
       font-size: ${({ theme }) => theme.COLORS.FSSPAN};
     }
   }

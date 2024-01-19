@@ -10,6 +10,16 @@ export const Container = styled.div`
   overflow: hidden;
   pointer-events: none;
 
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+    background: ${({ theme }) => theme.COLORS.BGGRADIENT};
+  }
+
   .loader {
     background: ${({ theme }) => theme.COLORS.BACKGROUND};
     width: 100%;

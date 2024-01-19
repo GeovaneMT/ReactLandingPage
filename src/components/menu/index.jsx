@@ -5,12 +5,11 @@ import { Container, MenuIcon } from "./styles"
 import { Icons } from "./icons"
 import { effect } from "./effect"
 
-export const Menu = ({ ...rest }) => {
-
+export const Menu = ({ backgroundColor, ...rest }) => {
   effect()
 
   return (
-    <Container className="barra" {...rest}>
+    <Container className="barra" $backgroundColor={backgroundColor} {...rest}>
       {Icons.map(({ icon, link, tooltip }, index) => {
         const isActive = useLocation().pathname === link
         return (

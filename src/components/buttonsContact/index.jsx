@@ -13,6 +13,7 @@ export const ButtonsContact = ({
   socialIcons = SocialIcons,
   header = "Sinta-se à vontade para entrar em ",
   span = "Contato",
+  span3 = "",
   ...rest
 }) => {
   effect()
@@ -20,7 +21,7 @@ export const ButtonsContact = ({
   return (
     <Container>
       <main>
-        <Header text={header} span={span} />
+        <Header text={header} span={span} span3={span3} />
         <div id="cards">
           {socialIcons.map((button, index) => (
             <Button

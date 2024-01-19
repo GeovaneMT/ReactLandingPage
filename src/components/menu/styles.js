@@ -33,7 +33,8 @@ export const MenuIcon = styled.span`
 `
 
 export const Container = styled.div`
-  background: ${({ theme }) => theme.COLORS.VIOLET};
+  background: ${({ $backgroundColor, theme }) =>
+    $backgroundColor || theme.COLORS.VIOLET};
 
   display: flex;
   position: fixed;

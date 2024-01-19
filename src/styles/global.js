@@ -51,16 +51,6 @@ export default createGlobalStyle`
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
     color: ${({ theme }) => theme.COLORS.WHITE};
 
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      pointer-events: none;
-      overflow: hidden;
-      background: ${({ theme }) => theme.COLORS.BGGRADIENT};
-    }
-
     > div > div > *,
     > div > div > main > * {
       opacity: 0;
