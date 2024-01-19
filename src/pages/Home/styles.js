@@ -62,7 +62,8 @@ export const Container = styled.div`
 
           > div {
             position: absolute;
-            inset: 0.8rem;
+            inset: 0.1rem;
+            
 
             > img {
               width: 100%;
@@ -97,7 +98,7 @@ export const Container = styled.div`
               color: ${({ theme }) => theme.COLORS.VIOLET};
             }
             li:last-child svg {
-              opacity: 0;
+              opacity:0
             }
           }
         }

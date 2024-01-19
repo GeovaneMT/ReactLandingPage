@@ -101,14 +101,15 @@ export const Container = styled.div`
   }
 
   p {
-    display:flex;
-    justify-content:center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     svg {
       width: 80%;
       height: 80%;
+      color: ${({ theme }) => theme.COLORS.ROSE};
     }
   }
 
