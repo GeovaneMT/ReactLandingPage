@@ -14,7 +14,7 @@ export const SocialIcons = [
   {
     icon: <PiBookOpenTextFill />,
     title: " Catálogo",
-    link: "/Contact",
+    link: "/Catalog",
   },
   {
     icon: <PiFacebookLogoFill />,
