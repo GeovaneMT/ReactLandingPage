@@ -1,8 +1,8 @@
-import { PiHouseLine, PiInfo, PiGear, PiUser } from "react-icons/pi"
+import { PiHouseLineFill, PiInfoFill, PiBookOpenTextFill, PiUserFill } from "react-icons/pi"
 
 export const Icons = [
-  { icon: <PiHouseLine />, link: "/", tooltip: "Home" },
-  { icon: <PiInfo />, link: "/Info", tooltip: "Info" },
-  { icon: <PiGear />, link: "/Catalog", tooltip: "Catalog" },
-  { icon: <PiUser />, link: "/Contact", tooltip: "Contact" },
+  { icon: <PiHouseLineFill />, link: "/", tooltip: "Home" },
+  { icon: <PiInfoFill />, link: "/Info", tooltip: "Info" },
+  { icon: <PiBookOpenTextFill />, link: "/Catalog", tooltip: "Catalog" },
+  { icon: <PiUserFill />, link: "/Contact", tooltip: "Contact" },
 ]
