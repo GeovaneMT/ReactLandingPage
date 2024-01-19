@@ -1,7 +1,7 @@
 import React from "react"
 
 //page styles and functions
-import { socialIcons } from "./socialIcons"
+import { SocialIcons } from "./socialIcons"
 import { Container } from "./styles"
 import { effect } from "./effect"
 
@@ -9,14 +9,18 @@ import { effect } from "./effect"
 import { Header } from "../../components/header"
 import { Button } from "../../components/button"
 
-export const ButtonsContact = () => {
-
+export const ButtonsContact = ({
+  socialIcons = SocialIcons,
+  header = "Sinta-se à vontade para entrar em ",
+  span = "Contato",
+  ...rest
+}) => {
   effect()
 
   return (
     <Container>
       <main>
-        <Header text="Sinta-se à vontade para entrar em " span="Contato" />
+        <Header text={header} span={span} />
         <div id="cards">
           {socialIcons.map((button, index) => (
             <Button

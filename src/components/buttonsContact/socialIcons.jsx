@@ -5,7 +5,7 @@ import {
   PiFacebookLogoFill,
 } from "react-icons/pi"
 
-export const socialIcons = [
+export const SocialIcons = [
   {
     icon: <PiWhatsappLogoFill />,
     title: " Whatsapp",

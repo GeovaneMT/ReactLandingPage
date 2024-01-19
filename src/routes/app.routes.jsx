@@ -19,7 +19,7 @@ export function AppRoutes() {
         <Route path="/" element={<components.Home />} />
         <Route path="/Info" element={<components.Info />} />
         <Route path="/Contact" element={<components.Contact />} />
-        <Route path="/Skills" element={<components.Skills />} />
+        <Route path="/Catalog" element={<components.Catalog />} />
         <Route path="*" element={<components.Error404 />} />
       </Routes>
     </Suspense>

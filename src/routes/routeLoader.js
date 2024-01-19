@@ -11,11 +11,11 @@ export function useRouteLoader(location) {
       import("../pages/Home"),
       import("../pages/Info"),
       import("../pages/Contact"),
-      import("../pages/Skills"),
+      import("../pages/Catalog"),
       import("../pages/404"),
     ])
-      .then(([{ Home }, { Info }, { Contact }, { Skills }, { Error404 }]) => {
-        setComponents({ Home, Info, Contact, Skills, Error404 })
+      .then(([{ Home }, { Info }, { Contact }, { Catalog }, { Error404 }]) => {
+        setComponents({ Home, Info, Contact, Catalog, Error404 })
         setIsLoading(false)
       })
       .catch((error) => {
