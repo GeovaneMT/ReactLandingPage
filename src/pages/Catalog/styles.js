@@ -1,9 +1,11 @@
 import styled from "styled-components"
+import background from "../../assets/images/BGdark.png"
+
 
 export const Container = styled.div`
   height: 100%;
   overflow: hidden;
-  background: ${({ theme }) => theme.COLORS.VIOLET};
+  background-image: url(${background});
 
   &::before {
     content: "";
@@ -14,6 +16,7 @@ export const Container = styled.div`
     overflow: hidden;
     background: ${({ theme }) => theme.COLORS.BGGRADIENTDARK};
   }
+
 
   > main {
     justify-content: space-between;
