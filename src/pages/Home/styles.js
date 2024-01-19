@@ -38,8 +38,6 @@ export const Container = styled.div`
           height: 24rem;
           border-radius: 50%;
           overflow: hidden;
-          box-shadow: -16px 16px 32px 0px
-            ${({ theme }) => theme.COLORS.VIOLET};
 
           &::before {
             content: "";
@@ -47,17 +45,17 @@ export const Container = styled.div`
             inset: -1rem 0rem;
             background: linear-gradient(
               315deg,
-              ${({ theme }) => theme.COLORS.BACKGROUND},
-              ${({ theme }) => theme.COLORS.BACKGROUND},
-              ${({ theme }) => theme.COLORS.BACKGROUND},
-              ${({ theme }) => theme.COLORS.BACKGROUND},
+              transparent,
+              transparent,
+              transparent,
+              transparent,
               ${({ theme }) => theme.COLORS.PINK},
               ${({ theme }) => theme.COLORS.ROSE},
               ${({ theme }) => theme.COLORS.PINK},
-              ${({ theme }) => theme.COLORS.BACKGROUND},
-              ${({ theme }) => theme.COLORS.BACKGROUND},
-              ${({ theme }) => theme.COLORS.BACKGROUND},
-              ${({ theme }) => theme.COLORS.BACKGROUND}
+              transparent,
+              transparent,
+              transparent,
+              transparent
             );
             animation: animate 4s linear infinite;
           }
@@ -99,7 +97,7 @@ export const Container = styled.div`
               color: ${({ theme }) => theme.COLORS.VIOLET};
             }
             li:last-child svg {
-              opacity:0
+              opacity: 0;
             }
           }
         }
