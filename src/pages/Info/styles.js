@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 import background from "../../assets/images/BG.png"
+import backgroundDark from "../../assets/images/BGdark.png"
+
 
 
 export const Container = styled.div`
@@ -28,7 +30,7 @@ export const Container = styled.div`
 
       > span {
         font-weight: bold;
-        color: ${({ theme }) => theme.COLORS.VIOLET};
+        color: ${({ theme }) => theme.COLORS.WHITE};
       }
 
       &:nth-child(2) {
@@ -46,5 +48,7 @@ export const Container = styled.div`
     gap: 12px;
     padding: 8%;
     border: 2px solid ${({ theme }) => theme.COLORS.WHITE};
+    // background-image: url(${backgroundDark});
+    background: ${({ theme }) => theme.COLORS.VIOLET_50};
   }
 `
