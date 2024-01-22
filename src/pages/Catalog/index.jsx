@@ -12,85 +12,101 @@ export const Catalog = () => {
   const allIcons = [
     {
       icon: <PiBookOpenTextFill />,
-      title: "Aço Inox - Brincos",
+      title: "Brincos",
+      hiddenTitle: "Aço Inox",
       link: "https://photos.app.goo.gl/vpYFi1WpNBUoaFBe6",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Prata 925 - Pulseiras",
+      title: "Pulseiras",
+      hiddenTitle: "Prata 925",
       link: "https://photos.app.goo.gl/JjTkTE3nXDuV46Ww9",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Prata 925 - Brincos (Brinco Infantil)",
+      title: "Brinco Infantil",
+      hiddenTitle: "Prata 925",
       link: "https://photos.app.goo.gl/7EJeRyo7ELWPK7Be7",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Prata 925 - Brincos (Brinco Ear Hook)",
+      title: "Brinco Ear Hook",
+      hiddenTitle: "Prata 925",
       link: "https://photos.app.goo.gl/UYCQa9hi6PinkN8w9",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Prata 925 - Brincos (Brinco Ear Cuff)",
+      title: "Brinco Ear Cuff",
+      hiddenTitle: "Prata 925",
       link: "https://photos.app.goo.gl/VjVD1VAQMYUjUxBm9",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Prata 925 - Brincos (Brincos Pequenos)",
+      title: "Brincos Pequenos",
+      hiddenTitle: "Prata 925",
       link: "https://photos.app.goo.gl/jU1oFPDrBVnA8KES6",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Prata 925 - Brincos (Argolas)",
+      title: "Argolas",
+      hiddenTitle: "Prata 925",
       link: "https://photos.app.goo.gl/C5CKgfwvzKB33K4t8",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Prata 925 - Brincos (Brincos Grandes)",
+      title: "Brincos Grandes",
+      hiddenTitle: "Prata 925",
       link: "https://photos.app.goo.gl/qaRY9gLhbVQa3FkC8",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Prata 925 - Brincos (Brincos de Trio)",
+      title: "Brincos de Trio",
+      hiddenTitle: "Prata 925",
       link: "https://photos.app.goo.gl/Bf1eNFh1tPy78Tsz5",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Semijoias - Brinco Ear Hook",
+      title: "Brinco Ear Hook",
+      hiddenTitle: "Semijoias",
       link: "https://photos.app.goo.gl/DutDe3G2MUGWhFow5",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Semijoias - Brinco Ear Cuff",
+      title: "Brinco Ear Cuff",
+      hiddenTitle: "Semijoias",
       link: "https://photos.app.goo.gl/HxY3RSMCHhZnPXbt8",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Semijoias - Brincos Pequenos",
+      title: "Brincos Pequenos",
+      hiddenTitle: "Semijoias",
       link: "https://photos.app.goo.gl/kR1faSRbFwMh7Wio8",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Semijoias - Brincos Infantil",
+      title: "Brincos Infantil",
+      hiddenTitle: "Semijoias",
       link: "https://photos.app.goo.gl/jadXbrfH2rtBZsQ39",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Semijoias - Brincos Grandes",
+      title: "Brincos Grandes",
+      hiddenTitle: "Semijoias",
       link: "https://photos.app.goo.gl/uFAGxDA7v2pdoULd7",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Semijoias - Argolas",
+      title: "Argolas",
+      hiddenTitle: "Semijoias",
       link: "https://photos.app.goo.gl/cz2vJ9bMgzHbc5NE9",
     },
     {
       icon: <PiBookOpenTextFill />,
-      title: "Semijoias - Brincos de Trio",
+      title: "Brincos de Trio",
+      hiddenTitle: "Semijoias",
       link: "https://photos.app.goo.gl/VZCrQ8Ev9PqWVA8D8",
     },
-  ];
+  ]
   const Filters = [
     {
       icon: "",
@@ -123,7 +139,7 @@ export const Catalog = () => {
 
   const filterIcons = (categoria) => {
     const filteredIcons = allIcons.filter((icon) =>
-      icon.title.includes(categoria)
+      icon.hiddenTitle.includes(categoria)
     )
     setIcons(filteredIcons)
     setActiveFilter(categoria)

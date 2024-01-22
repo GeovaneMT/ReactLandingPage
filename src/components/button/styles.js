@@ -61,7 +61,7 @@ export const Container = styled.button`
         width: max-content;
         transition-delay: 0.6s;
       }
-      &:last-child {
+      &:last-child, &:nth-child(3) {
         opacity: 0;
         width: 0;
         transition: none;

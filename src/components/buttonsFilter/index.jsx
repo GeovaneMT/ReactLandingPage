@@ -27,6 +27,7 @@ export const ButtonsFilter = ({
               onClick={button.onClick}
               icon={button.icon}
               title={button.title}
+              hiddenTitle={button.hiddenTitle}
               fixedTitle={button.fixedTitle}
             />
           ))}
