@@ -95,25 +95,25 @@ export const Catalog = () => {
     {
       icon: "",
       title: " Prata 925",
-      link: "#",
+      fixedTitle: "Filtrar",
       onClick: () => filterIcons("Prata 925"),
     },
     {
       icon: "",
       title: " Semijoias",
-      link: "#",
+      fixedTitle: "Filtrar",
       onClick: () => filterIcons("Semijoias"),
     },
     {
       icon: "",
       title: " Aço Inox",
-      link: "#",
+      fixedTitle: "Filtrar",
       onClick: () => filterIcons("Aço Inox"),
     },
     {
       icon: "",
       title: " Todos",
-      link: "#",
+      fixedTitle: "Filtrar",
       onClick: () => filterIcons(""),
     },
   ]
