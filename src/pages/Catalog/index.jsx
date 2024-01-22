@@ -3,7 +3,7 @@ import { Container } from "./styles"
 import { Anchor } from "../../components/anchor"
 import { Menu } from "../../components/menu"
 import { Footer } from "../../components/footer"
-import { ButtonsList } from "../../components/ButtonsList"
+import { ButtonsList } from "../../components/buttonsList"
 import { ButtonsFilter } from "../../components/buttonsFilter"
 
 import { PiBookOpenTextFill } from "react-icons/pi"
