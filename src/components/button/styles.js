@@ -1,9 +1,9 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Container = styled.button`
   color: ${({ theme }) => theme.COLORS.WHITE};
-      background: ${({ $backgroundColor, theme }) =>
-        $backgroundColor || theme.COLORS.GRADIENT};
+  background: ${({ $backgroundColor, theme }) =>
+    $backgroundColor || theme.COLORS.GRADIENT};
   display: flex;
   gap: 2.4vw;
   width: 75%;
@@ -24,7 +24,7 @@ export const Container = styled.button`
     );
   }
 
-  > a {
+  > a, div {
     display: flex;
     position: absolute;
     width: 100%;
@@ -48,7 +48,6 @@ export const Container = styled.button`
       transform: scaleX(1);
       transform-origin: right;
       transition: all 0.6s ease-in-out;
-
       z-index: -1;
       background: ${({ $backgroundColor, theme }) =>
         $backgroundColor || theme.COLORS.GRADIENT};
@@ -56,7 +55,6 @@ export const Container = styled.button`
 
     > p {
       transition: all 0.6s ease-in-out;
-      text-align: left;
 
       &:nth-child(2) {
         opacity: 1;
@@ -69,8 +67,7 @@ export const Container = styled.button`
         transition: none;
       }
     }
-    //txt changes ^
-    //icon changes
+
     span > svg {
       transition: all 0.6s ease-in-out;
 
@@ -86,13 +83,11 @@ export const Container = styled.button`
         animation: none;
       }
     }
-    //icon changes ^
   }
 
   &:hover,
   &:active {
-    //txt changes
-    a {
+    a, div {
       transform: scale(1);
 
       &::before {
@@ -131,8 +126,7 @@ export const Container = styled.button`
         }
       }
     }
-    //txt changes
-    //icon changes
+
     span > svg {
       transition: all 0.6s ease-in-out;
 
@@ -147,7 +141,6 @@ export const Container = styled.button`
         transition-delay: 0.6s;
       }
     }
-    //icon changes
   }
 
   @media screen and (min-width: 769px) {
