@@ -71,14 +71,17 @@ export const Catalog = () => {
             />
           </>
         ) : (
-          <ButtonsFilter
-            socialIcons={Filters.slice(0, -1).map((filter) => ({
-              ...filter,
-              onClick: () => handleFilterClick(filter),
-            }))}
-            backgroundColor={({ theme }) => theme.COLORS.BACKGROUND}
-            textColor={({ theme }) => theme.COLORS.VIOLETCONTRAST}
-          />
+          <>
+            <div/>
+            <ButtonsFilter
+              socialIcons={Filters.slice(0, -1).map((filter) => ({
+                ...filter,
+                onClick: () => handleFilterClick(filter),
+              }))}
+              backgroundColor={({ theme }) => theme.COLORS.BACKGROUND}
+              textColor={({ theme }) => theme.COLORS.VIOLETCONTRAST}
+            />
+          </>
         )}
 
         <Footer />

@@ -18,7 +18,7 @@ export const Container = styled.div`
   }
 
 
-  > main {
+  & > main {
     justify-content: space-between;
   }
 `
