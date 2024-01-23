@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-  color: ${({ theme }) => theme.COLORS.WHITE};
+  color: ${({ $textColor, theme }) => $textColor || theme.COLORS.WHITE};
   background: ${({ $backgroundColor, theme }) =>
     $backgroundColor || theme.COLORS.GRADIENT};
   display: flex;
@@ -35,8 +35,10 @@ export const Container = styled.button`
     padding: 0 3.2rem;
     align-items: center;
     border-radius: inherit;
-    color: ${({ theme }) => theme.COLORS.WHITE};
-    background: ${({ theme }) => theme.COLORS.VIOLET};
+    color: ${({ $textColor, theme }) => 
+      $textColor || theme.COLORS.WHITE};
+    background: ${({ $backgroundColor, theme }) =>
+      $backgroundColor || theme.COLORS.GRADIENT};
     z-index: 1;
 
     &::before {

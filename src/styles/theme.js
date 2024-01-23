@@ -9,6 +9,7 @@ export default {
     PINK: "hsla(320, 100%, 75%, 1)",
     ROSE: "hsla(320, 70%, 60%, 1)",
     VIOLET: "hsla(320, 25%, 50%, 1)",
+    VIOLETCONTRAST: "hsla(320, 25%, 25%, 1)",
     VIOLET_50: "hsla(320, 100%, 10%, 0.5)",
 
     GRADIENT:

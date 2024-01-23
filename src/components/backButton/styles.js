@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.button`
-  color: ${({ theme }) => theme.COLORS.VIOLET};
+  color: ${({ theme }) => theme.COLORS.VIOLETCONTRAST};
   background: ${({ theme }) => theme.COLORS.BACKGROUND};
 
   display: flex;
@@ -14,7 +14,7 @@ export const Container = styled.button`
 
   &:hover,
   &:active {
-    background: ${({ theme }) => theme.COLORS.VIOLET};
+    background: ${({ theme }) => theme.COLORS.VIOLETCONTRAST};
     color: ${({ theme }) => theme.COLORS.WHITE};
   }
 `

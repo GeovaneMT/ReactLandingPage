@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Container } from "./styles"
 import { allIcons } from "./allIcons"
 import { Anchor } from "../../components/anchor"
@@ -8,7 +8,6 @@ import { ButtonsList } from "../../components/buttonsList"
 import { ButtonsFilter } from "../../components/buttonsFilter"
 import { BackButton } from "../../components/backButton"
 import { Filters } from "./Filters"
-import { PiArrowCircleLeft } from "react-icons/pi"
 
 export const Catalog = () => {
   const [icons, setIcons] = useState(allIcons)
@@ -28,13 +27,27 @@ export const Catalog = () => {
     filterIcons(filter.category)
   }
 
+  const handleBackButtonClick = () => {
+    setButtonsListVisible(false)
+  }
+
+  useEffect(() => {
+    const handlePopstate = () => {
+      handleBackButtonClick()
+    }
+
+    window.addEventListener("popstate", handlePopstate)
+
+    return () => {
+      window.removeEventListener("popstate", handlePopstate)
+    }
+  }, [])
+
   return (
     <Container>
       <Menu $backgroundColor={({ theme }) => theme.COLORS.PINK} />
       <Anchor text="Contato" />
-      {buttonsListVisible && (
-        <BackButton onClick={() => setButtonsListVisible(false)} />
-      )}
+      {buttonsListVisible && <BackButton onClick={handleBackButtonClick} />}
       <main>
         {buttonsListVisible ? (
           <>
@@ -53,7 +66,8 @@ export const Catalog = () => {
               ...filter,
               onClick: () => handleFilterClick(filter),
             }))}
-            backgroundColor={({ theme }) => theme.COLORS.VIOLET}
+            backgroundColor={({ theme }) => theme.COLORS.BACKGROUND}
+            textColor={({ theme }) => theme.COLORS.VIOLETCONTRAST}
           />
         )}
 

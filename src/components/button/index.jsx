@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import { Container } from "./styles"
-import { PiArrowCircleRight } from "react-icons/pi"
+import React from "react";
+import { Link } from "react-router-dom";
+import { Container } from "./styles";
+import { PiArrowCircleRight } from "react-icons/pi";
 
 const CommonLinkContent = ({
   iconSize,
@@ -39,7 +39,6 @@ const CommonLinkContent = ({
     <p style={{ fontSize: "1.8rem" }}>{fixedTitle}</p>
   </>
 )
-
 export const Button = ({
   title = "Título",
   fixedTitle = "Ir Para",
@@ -48,7 +47,8 @@ export const Button = ({
   icon = "",
   to = "",
   backgroundColor = "",
-  $iconColor = "",
+  textColor = "",
+  iconColor = "",
   onClick = () => console.log("Button clicked"),
   ...rest
 }) => {
@@ -56,10 +56,10 @@ export const Button = ({
 
   const commonLinkProps = {
     to,
-    style: { fontSize: iconSize, color: $iconColor },
+    style: { fontSize: iconSize, color: textColor, iconColor },
     children: (
       <CommonLinkContent
-        {...{ iconSize, iconColor: $iconColor, icon, title, fixedTitle }}
+        {...{ iconSize, iconColor: iconColor, icon, title, fixedTitle }}
       />
     ),
     ...rest,
@@ -71,7 +71,12 @@ export const Button = ({
 
   if (!to) {
     return (
-      <Container $backgroundColor={backgroundColor} onClick={onClick} {...rest}>
+      <Container
+        $backgroundColor={backgroundColor}
+        $textColor={textColor}
+        onClick={onClick}
+        {...rest}
+      >
         <div {...rest}>
           {commonLinkProps.children}
           <p>{hiddenTitle}</p>
@@ -81,7 +86,12 @@ export const Button = ({
   }
 
   return (
-    <Container $backgroundColor={backgroundColor} onClick={onClick} {...rest}>
+    <Container
+      $backgroundColor={backgroundColor}
+      $textColor={textColor}
+      onClick={onClick}
+      {...rest}
+    >
       <Link {...linkProps} />
     </Container>
   )

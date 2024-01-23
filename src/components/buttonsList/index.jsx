@@ -28,7 +28,7 @@ export const ButtonsList = ({
           {socialIcons.map((button, index) => (
             <Button
               backgroundColor={backgroundColor}
-              $iconColor={IconColor}
+              iconColor={IconColor}
               key={index}
               icon={button.icon}
               title={button.title}

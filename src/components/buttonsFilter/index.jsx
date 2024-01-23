@@ -1,17 +1,18 @@
 import React from "react"
 
-//page styles and functions
+// page styles and functions
 import { SocialIcons } from "./socialIcons"
 import { Container } from "./styles"
 import { effect } from "./effect"
 
-//modules
+// modules
 import { Button } from "../../components/button"
 
 export const ButtonsFilter = ({
   socialIcons = SocialIcons,
   backgroundColor = "",
   onClick,
+  textColor = "",
   ...rest
 }) => {
   effect()
@@ -24,6 +25,7 @@ export const ButtonsFilter = ({
             <Button
               key={index}
               backgroundColor={backgroundColor}
+              textColor={textColor}
               onClick={button.onClick}
               icon={button.icon}
               title={button.title}

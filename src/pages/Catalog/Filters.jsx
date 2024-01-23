@@ -3,19 +3,19 @@ export const Filters = [
   {
     icon: "",
     title: " Prata 925",
-    fixedTitle: "Filtrar",
+    fixedTitle: "Ir Para",
     category: "Prata 925",
   },
   {
     icon: "",
     title: " Semijoias",
-    fixedTitle: "Filtrar",
+    fixedTitle: "Ir Para",
     category: "Semijoias",
   },
   {
     icon: "",
     title: " Aço Inox",
-    fixedTitle: "Filtrar",
+    fixedTitle: "Ir Para",
     category: "Aço Inox",
   },
   {
