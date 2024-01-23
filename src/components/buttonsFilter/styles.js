@@ -33,7 +33,7 @@ export const Container = styled.div`
         }
 
         button {
-          height: 5vh;
+          height: 16vh;
         }
       }
     }

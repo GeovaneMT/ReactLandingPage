@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-  color: ${({ $textColor, theme }) => $textColor || theme.COLORS.WHITE};
-  background: ${({ $backgroundColor, theme }) =>
-    $backgroundColor || theme.COLORS.GRADIENT};
+  color: ${({ theme }) => theme.COLORS.WHITE};
+  background: ${({ theme }) => theme.COLORS.GRADIENT};
   display: flex;
   gap: 2.4vw;
   width: 75%;
@@ -35,10 +34,8 @@ export const Container = styled.button`
     padding: 0 3.2rem;
     align-items: center;
     border-radius: inherit;
-    color: ${({ $textColor, theme }) => 
-      $textColor || theme.COLORS.WHITE};
-    background: ${({ $backgroundColor, theme }) =>
-      $backgroundColor || theme.COLORS.GRADIENT};
+    color: ${({ $textColor, theme }) => $textColor || theme.COLORS.WHITE};
+    background: ${({ theme }) => theme.COLORS.VIOLET};
     z-index: 1;
 
     &::before {
@@ -93,6 +90,8 @@ export const Container = styled.button`
   &:active {
     a,
     div {
+
+      color: ${({ $textHover, theme }) => $textHover || theme.COLORS.WHITE};
       transform: scale(1);
 
       &::before {
