@@ -9,6 +9,7 @@ import { ButtonsFilter } from "../../components/buttonsFilter"
 import { Filters } from "./Filters"
 
 export const Catalog = () => {
+  
   const [icons, setIcons] = useState(allIcons)
   const [activeFilter, setActiveFilter] = useState("")
 
@@ -39,11 +40,10 @@ export const Catalog = () => {
           span=""
           span3="Catálogo"
           socialIcons={icons}
-          IconColor={({ theme }) => theme.COLORS.ROSE}
+          IconColor=""
         />
 
         <Footer />
-        
       </main>
     </Container>
   )
