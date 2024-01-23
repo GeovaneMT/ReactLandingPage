@@ -20,8 +20,8 @@ export const Filters = [
   },
   {
     icon: "",
-    title: " Todos",
-    fixedTitle: "Filtrar",
+    title: " Voltar",
+    fixedTitle: "Voltar",
     category: "",
   },
 ]

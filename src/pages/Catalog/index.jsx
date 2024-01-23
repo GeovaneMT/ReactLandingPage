@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Container } from "./styles"
 import { allIcons } from "./allIcons"
 import { Anchor } from "../../components/anchor"
@@ -6,12 +6,14 @@ import { Menu } from "../../components/menu"
 import { Footer } from "../../components/footer"
 import { ButtonsList } from "../../components/buttonsList"
 import { ButtonsFilter } from "../../components/buttonsFilter"
+import { BackButton } from "../../components/backButton"
 import { Filters } from "./Filters"
+import { PiArrowCircleLeft } from "react-icons/pi"
 
 export const Catalog = () => {
-  
   const [icons, setIcons] = useState(allIcons)
   const [activeFilter, setActiveFilter] = useState("")
+  const [buttonsListVisible, setButtonsListVisible] = useState(false)
 
   const filterIcons = (categoria) => {
     const filteredIcons = allIcons.filter((icon) =>
@@ -19,6 +21,11 @@ export const Catalog = () => {
     )
     setIcons(filteredIcons)
     setActiveFilter(categoria)
+    setButtonsListVisible(true)
+  }
+
+  const handleFilterClick = (filter) => {
+    filterIcons(filter.category)
   }
 
   return (
@@ -26,22 +33,27 @@ export const Catalog = () => {
       <Menu $backgroundColor={({ theme }) => theme.COLORS.PINK} />
       <Anchor text="Contato" />
       <main>
-        <ButtonsFilter
-          socialIcons={Filters.map((filter) => ({
-            ...filter,
-            onClick: () => filterIcons(filter.category),
-          }))}
-          backgroundColor={({ theme }) => theme.COLORS.VIOLET}
-        />
-
-        <ButtonsList
-          backgroundColor={({ theme }) => theme.COLORS.GRADIENTDARK}
-          header="Confira nosso "
-          span=""
-          span3="Catálogo"
-          socialIcons={icons}
-          IconColor=""
-        />
+        {buttonsListVisible ? (
+          <>
+            <BackButton onClick={() => setButtonsListVisible(false)} />
+            <ButtonsList
+              backgroundColor={({ theme }) => theme.COLORS.GRADIENTDARK}
+              header="Confira nosso"
+              span=""
+              span3="Catálogo"
+              socialIcons={icons}
+              IconColor=""
+            />
+          </>
+        ) : (
+          <ButtonsFilter
+            socialIcons={Filters.slice(0, -1).map((filter) => ({
+              ...filter,
+              onClick: () => handleFilterClick(filter),
+            }))}
+            backgroundColor={({ theme }) => theme.COLORS.VIOLET}
+          />
+        )}
 
         <Footer />
       </main>
