@@ -45,7 +45,13 @@ export const Catalog = () => {
 
   return (
     <Container>
-      <Menu $backgroundColor={({ theme }) => theme.COLORS.PINK} />
+      <Menu
+        backgroundColor={({ theme }) => theme.COLORS.BACKGROUND}
+        textColor={({ theme }) => theme.COLORS.ROSE}
+        text50={({ theme }) => theme.COLORS.VIOLET}
+        texthover={({ theme }) => theme.COLORS.ROSE}
+        shadows={({ theme }) => theme.COLORS.PINK}
+      />
       <Anchor text="Contato" />
       {buttonsListVisible && <BackButton onClick={handleBackButtonClick} />}
       <main>

@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import theme from "../../styles/theme"
 import { keyframes } from "styled-components"
 
 
@@ -26,8 +25,10 @@ const hideContent = keyframes`
 `
 
 export const MenuIcon = styled.span`
-  color: ${({ $active }) =>
-    $active === "true" ? theme.COLORS.WHITE : theme.COLORS.WHITE_50};
+  color: ${({ $active, $textColor, $text50, theme }) =>
+    $active === "true"
+      ? $textColor || theme.COLORS.WHITE
+      : $text50 || theme.COLORS.WHITE_50};
   cursor: ${({ $active }) => ($active === "true" ? "default" : "pointer")};
   transition: all 0.3s ease-in-out;
 `
@@ -61,13 +62,15 @@ export const Container = styled.div`
   }
 
   svg {
-    filter: drop-shadow(0px 4px 4px ${({ theme }) => theme.COLORS.VIOLET});
+    filter: drop-shadow(
+      0px 4px 4px ${({ $shadows, theme }) => $shadows || theme.COLORS.VIOLET}
+    );
     font-size: 3.2rem;
   }
 
   a:hover span,
   a:active span {
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ $texthover, theme }) => $texthover || theme.COLORS.WHITE};
   }
 
   @media screen and (min-width: 769px) {
