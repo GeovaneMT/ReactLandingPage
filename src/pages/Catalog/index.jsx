@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from "react"
+
 import { Container } from "./styles"
+
 import { allIcons } from "./allIcons"
+import { Filters } from "./Filters"
+
 import { Anchor } from "../../components/anchor"
 import { Menu } from "../../components/menu"
 import { Footer } from "../../components/footer"
+
 import { ButtonsList } from "../../components/buttonsList"
 import { ButtonsFilter } from "../../components/buttonsFilter"
 import { BackButton } from "../../components/backButton"
-import { Filters } from "./Filters"
 
 export const Catalog = () => {
   const [icons, setIcons] = useState(allIcons)
