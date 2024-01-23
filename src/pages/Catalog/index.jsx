@@ -32,10 +32,12 @@ export const Catalog = () => {
     <Container>
       <Menu $backgroundColor={({ theme }) => theme.COLORS.PINK} />
       <Anchor text="Contato" />
+      {buttonsListVisible && (
+        <BackButton onClick={() => setButtonsListVisible(false)} />
+      )}
       <main>
         {buttonsListVisible ? (
           <>
-            <BackButton onClick={() => setButtonsListVisible(false)} />
             <ButtonsList
               backgroundColor={({ theme }) => theme.COLORS.GRADIENTDARK}
               header="Confira nosso"

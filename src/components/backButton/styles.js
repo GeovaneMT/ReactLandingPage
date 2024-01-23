@@ -10,6 +10,7 @@ export const Container = styled.button`
   padding: 0.8rem;
   border-radius: 20px;
   align-items: center;
+  margin: 0 0 3.2rem 8vw;
 
   &:hover,
   &:active {
