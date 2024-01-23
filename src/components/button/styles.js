@@ -24,7 +24,8 @@ export const Container = styled.button`
     );
   }
 
-  > a, div {
+  > a,
+  div {
     display: flex;
     position: absolute;
     width: 100%;
@@ -61,7 +62,8 @@ export const Container = styled.button`
         width: max-content;
         transition-delay: 0.6s;
       }
-      &:last-child, &:nth-child(3) {
+      &:last-child,
+      &:nth-child(3) {
         opacity: 0;
         width: 0;
         transition: none;
@@ -87,7 +89,8 @@ export const Container = styled.button`
 
   &:hover,
   &:active {
-    a, div {
+    a,
+    div {
       transform: scale(1);
 
       &::before {
@@ -119,7 +122,7 @@ export const Container = styled.button`
           width: 0;
           transition: none;
         }
-        &:last-child {
+        &:nth-child(3) {
           opacity: 1;
           width: max-content;
           transition-delay: 0.6s;

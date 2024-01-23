@@ -20,7 +20,7 @@ export const Container = styled.div`
     > main {
       > div {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
 
         &:hover > button:after,
@@ -33,7 +33,7 @@ export const Container = styled.div`
         }
 
         button {
-          height: 15vh;
+          height: 5vh;
         }
       }
     }

@@ -1,11 +1,11 @@
 import React from "react"
 
-//page styles and functions
+// page styles and functions
 import { SocialIcons } from "./socialIcons"
 import { Container } from "./styles"
 import { effect } from "./effect"
 
-//modules
+// modules
 import { Header } from "../../components/header"
 import { Button } from "../../components/button"
 
@@ -15,6 +15,7 @@ export const ButtonsList = ({
   span = "Contato",
   span3 = "",
   backgroundColor = "",
+  IconColor = "",
   ...rest
 }) => {
   effect()
@@ -29,6 +30,7 @@ export const ButtonsList = ({
               backgroundColor={backgroundColor}
               key={index}
               icon={button.icon}
+              $iconColor={button.iconColor || IconColor}
               title={button.title}
               to={button.link}
             />

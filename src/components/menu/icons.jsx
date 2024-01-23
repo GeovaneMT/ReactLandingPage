@@ -2,7 +2,7 @@ import { PiHouseLineFill, PiInfoFill, PiBookOpenTextFill, PiUserFill } from "rea
 
 export const Icons = [
   { icon: <PiHouseLineFill />, link: "/", tooltip: "Home" },
-  { icon: <PiInfoFill />, link: "/Info", tooltip: "Info" },
   { icon: <PiBookOpenTextFill />, link: "/Catalog", tooltip: "Catalog" },
+  { icon: <PiInfoFill />, link: "/Info", tooltip: "Info" },
   { icon: <PiUserFill />, link: "/Contact", tooltip: "Contact" },
 ]
