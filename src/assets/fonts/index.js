@@ -1,0 +1,6 @@
+export { default as SansationRegular } from "../fonts/Sansation/Sansation_Regular.ttf"
+export { default as SansationItalic } from "../fonts/Sansation/Sansation_Italic.ttf"
+export { default as SansationLight } from "../fonts/Sansation/Sansation_Light.ttf"
+export { default as SansationLightItalic } from "../fonts/Sansation/Sansation_Light_Italic.ttf"
+export { default as SansationBold } from "../fonts/Sansation/Sansation_Bold.ttf"
+export { default as SansationBoldItalic } from "../fonts/Sansation/Sansation_Bold_Italic.ttf"
