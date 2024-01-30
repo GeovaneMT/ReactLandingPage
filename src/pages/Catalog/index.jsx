@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 
 import { Container } from "./styles"
 
@@ -27,25 +27,6 @@ export const Catalog = () => {
     setButtonsListVisible(true)
   }
 
-  const handleFilterClick = (filter) => {
-    filterIcons(filter.category)
-  }
-
-  const handleBackButtonClick = () => {
-    setButtonsListVisible(false)
-  }
-
-  useEffect(() => {
-    const handlePopstate = () => {
-      handleBackButtonClick()
-    }
-
-    window.addEventListener("popstate", handlePopstate)
-
-    return () => {
-      window.removeEventListener("popstate", handlePopstate)
-    }
-  }, [])
 
   return (
     <Container>
@@ -56,8 +37,10 @@ export const Catalog = () => {
         texthover={({ theme }) => theme.COLORS.ROSE}
         shadows={({ theme }) => theme.COLORS.PINK}
       />
-      <Anchor text="Contato" />
-      {buttonsListVisible && <BackButton onClick={handleBackButtonClick} />}
+      <Anchor text="Catálogo" />
+      {buttonsListVisible && (
+        <BackButton onClick={() => setButtonsListVisible(false)} />
+      )}
       <main>
         {buttonsListVisible ? (
           <>
@@ -72,11 +55,11 @@ export const Catalog = () => {
           </>
         ) : (
           <>
-            <div/>
+            <div />
             <ButtonsFilter
               socialIcons={Filters.slice(0, -1).map((filter) => ({
                 ...filter,
-                onClick: () => handleFilterClick(filter),
+                onClick: () => filterIcons(filter.category),
               }))}
               backgroundColor={({ theme }) => theme.COLORS.BACKGROUND}
               textColor={({ theme }) => theme.COLORS.VIOLETCONTRAST}

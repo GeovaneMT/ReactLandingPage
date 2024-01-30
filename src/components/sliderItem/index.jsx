@@ -2,10 +2,9 @@ import React from "react"
 
 import { Container } from "./styles"
 
-import reactjs from "../../assets/Icons/reactjs.svg"
 
 export const Item = ({
-  icon = reactjs,
+  icon = "",
   iconAlt = "",
   title = "React ",
   text1 = "Tecnologia Front End para ",

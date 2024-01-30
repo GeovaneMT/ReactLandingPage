@@ -31,7 +31,7 @@ export const Menu = ({ backgroundColor, textColor, text50, texthover, shadows, .
                 <MenuIcon
                   $active="false"
                   $text50={text50}
-                  texthover={texthover}
+                  $texthover={texthover}
                   title={tooltip}
                 >
                   {icon}

@@ -1,11 +1,6 @@
-import reactjs from "../../assets/Icons/reactjs.svg"
-import node from "../../assets/Icons/node.svg"
-import mysql from "../../assets/Icons/mysql.svg"
-import javascript from "../../assets/Icons/javascript.svg"
-
 export const ItemsConfig = [
   {
-    icon: reactjs,
+    icon: "",
     title: "React ",
     text1: "Tecnologia Front End para ",
     span1: "Modularização de Componentes ",
@@ -18,7 +13,7 @@ export const ItemsConfig = [
     br3: false,
   },
   {
-    icon: node,
+    icon: "",
     title: "Node",
     text1: "Tecnologia Backend para Criação de ",
     span1: "Rotas de Aplicação ",
@@ -31,7 +26,7 @@ export const ItemsConfig = [
     br3: false,
   },
   {
-    icon: mysql,
+    icon: "",
     title: "SQL",
     text1:
       "Utilizado para criação e manutenção de Banco de Dados, recomenda-se utilizar um ",
@@ -45,7 +40,7 @@ export const ItemsConfig = [
     br3: false,
   },
   {
-    icon: javascript,
+    icon: "",
     title: "JavaScript",
     text1:
       "Linguagem de Programação versátil utilizada como base para outras Tecnologias como ",

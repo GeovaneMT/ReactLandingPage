@@ -6,10 +6,6 @@ import { Menu } from "../../components/menu"
 import { Slider } from "../../components/slider"
 import { Footer } from "../../components/footer"
 
-import anhanguera from "../../assets/Icons/anhanguera.png"
-import rocket from "../../assets/Icons/rocket.svg"
-import matera from "../../assets/Icons/matera.webp"
-
 //react icons / phosphor icons
 import {
   PiShootingStarFill,
