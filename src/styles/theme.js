@@ -1,16 +1,19 @@
 export default {
-
   FONT: {
     // font families
     MAIN: `'SF-Pro-Display-Regular', sans-serif`,
 
     HEADER: `'Sansation-Bold', 'SF-Pro-Display-Regular', sans-serif`,
 
+    HIGHLIGHTSNORMAL: `'Sansation-Regular', sans-serif`,
+
+    HIGHLIGHTSNORMALITALIC: `'Sansation-Italic', sans-serif`,
+
     HIGHLIGHTS: `'Sansation-Light', 'Sansation-Regular', sans-serif`,
 
     SIGNATURES: "'Billabong', 'SF-Pro-Display-Regular', sans-serif",
   },
-  
+
   COLORS: {
     //colors
     BACKGROUND: "hsla(320, 40%, 75%, 1)",

@@ -1,7 +1,12 @@
-import styled from 'styled-components'
+import styled from "styled-components"
+
+import { Sansation } from "../../styles/fonts"
+
 import background from "../../assets/images/BG.png"
 
 export const Container = styled.div`
+  ${Sansation}
+
   height: 100%;
   overflow: hidden;
   background: ${({ theme }) => theme.COLORS.BGGRADIENT};
@@ -89,14 +94,19 @@ export const Container = styled.div`
             li {
               display: flex;
               gap: 4px;
+              font-family: ${({ theme }) => theme.FONT.HIGHLIGHTSNORMAL};
+              color: ${({ theme }) => theme.COLORS.VIOLET};
+
               span {
                 ${({ theme }) => theme.COLORS.PINK};
+                color: ${({ theme }) => theme.COLORS.VIOLET};
+                font-family: ${({ theme }) => theme.FONT.HIGHLIGHTSNORMALITALIC};
               }
             }
 
             li,
             h2 {
-              text-shadow: 0px 4px 4px ${({ theme }) => theme.COLORS.VIOLET};
+              text-shadow: 0px 2px 4px ${({ theme }) => theme.COLORS.VIOLET};
             }
 
             li svg {
