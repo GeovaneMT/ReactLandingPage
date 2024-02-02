@@ -6,6 +6,8 @@ import { allIcons } from "./allIcons"
 import { Filters } from "./Filters"
 
 import { Anchor } from "../../components/anchor"
+import { Header } from "../../components/header"
+import { Care } from "../../components/Care"
 import { Menu } from "../../components/menu"
 import { Footer } from "../../components/footer"
 
@@ -27,7 +29,6 @@ export const Catalog = () => {
     setButtonsListVisible(true)
   }
 
-
   return (
     <Container>
       <Menu
@@ -38,24 +39,24 @@ export const Catalog = () => {
         shadows={({ theme }) => theme.COLORS.PINK}
       />
       <Anchor text="Catálogo" />
+
       {buttonsListVisible && (
         <BackButton onClick={() => setButtonsListVisible(false)} />
       )}
       <main>
         {buttonsListVisible ? (
-          <>
-            <ButtonsList
-              backgroundColor={({ theme }) => theme.COLORS.GRADIENTDARK}
-              header="Confira nosso"
-              span=""
-              span3="Catálogo"
-              socialIcons={icons}
-              IconColor=""
-            />
-          </>
+          <ButtonsList
+            backgroundColor={({ theme }) => theme.COLORS.GRADIENTDARK}
+            header="Confira nosso"
+            span=""
+            span3="Catálogo"
+            socialIcons={icons}
+            IconColor=""
+          />
         ) : (
           <>
-            <div />
+            <Header text="Confira nosso" span="Catálogo" />
+            <Care/>
             <ButtonsFilter
               socialIcons={Filters.slice(0, -1).map((filter) => ({
                 ...filter,
