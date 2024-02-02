@@ -1,6 +1,10 @@
 import { Container } from "./styles"
 import { BackButton } from "../backButton"
 
+import {
+  PiWhatsappLogo,
+} from "react-icons/pi"
+
 export const Care = ({
   text1 = "Banho",
   text2 = "Praia",
@@ -37,8 +41,8 @@ export const Care = ({
       <p>
         Problemas com o seu pedido? Nos chame no WhatsApp
         <BackButton
-          icon=""
-          text="(19) 99247-9708"
+          icon={<PiWhatsappLogo/>}
+          text="Whatsapp"
           link="https://api.whatsapp.com/send/?phone=5519997844692&type=phone_number&app_absent=0"
           target="_blank"
         />
