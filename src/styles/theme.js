@@ -11,7 +11,7 @@ export default {
 
     HIGHLIGHTS: `'Sansation-Light', 'Sansation-Regular', sans-serif`,
 
-    SIGNATURES: "'Billabong', 'SF-Pro-Display-Regular', sans-serif",
+    SIGNATURES: `'Billabong', 'SF-Pro-Display-Regular', sans-serif`,
   },
 
   COLORS: {

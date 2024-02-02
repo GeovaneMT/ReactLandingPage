@@ -5,6 +5,7 @@ import { Sansation } from "../../styles/fonts"
 import background from "../../assets/images/BG.png"
 
 export const Container = styled.div`
+
   ${Sansation}
 
   height: 100%;

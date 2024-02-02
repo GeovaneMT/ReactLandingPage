@@ -1,4 +1,6 @@
 //Sansation
+export { default as Billabongs } from "../fonts/Billabong/Billabong.ttf"
+//Sansation
 export { default as SansationLight       } from "../fonts/Sansation/Sansation_Light.ttf"
 export { default as SansationLightItalic } from "../fonts/Sansation/Sansation_Light_Italic.ttf"
 

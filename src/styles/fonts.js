@@ -1,6 +1,8 @@
 import { css } from "styled-components"
 
 import {
+  // Billabong
+  Billabongs,
 
   // Sansation
   SansationLight,
@@ -66,6 +68,14 @@ import {
   SFProCompressedUltralightItalic,
 } from "../assets/fonts"
 
+export const Billabong = css`
+  @font-face {
+    font-family: "Billabong";
+    font-weight: 500;
+    font-style: normal;
+    src: url("${Billabongs}") format("opentype");
+  }
+`
 
 export const Sansation = css`
   @font-face {
