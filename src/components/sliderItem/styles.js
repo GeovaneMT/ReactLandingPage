@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components"
+import { Sansation } from "../../styles/fonts"
 
 const showContent = keyframes`
   from {
@@ -11,6 +12,8 @@ const showContent = keyframes`
 `
 
 export const Container = styled.div`
+  ${Sansation}
+
   display: flex;
   flex-direction: column;
   gap: 7rem;
@@ -25,6 +28,7 @@ export const Container = styled.div`
     width: 300px;
 
     div:nth-child(1) {
+      font-family: ${({ theme }) => theme.FONT.HEADER};
       font-size: ${({ theme }) => theme.COLORS.FSTITLE};
       color: ${({ theme }) => theme.COLORS.VIOLET};
       justify-content: start;

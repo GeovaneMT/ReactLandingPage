@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 import { keyframes } from "styled-components"
 
 // FONTS
-import { MainFontFace } from "./fonts"
+import { SFPro, Sansation } from "./fonts"
 
 
 const showContent = keyframes`
@@ -19,6 +19,10 @@ const showContent = keyframes`
 `
 
 export default createGlobalStyle`
+
+  ${SFPro}
+  ${Sansation}
+
   ::-webkit-scrollbar {
     width: 1.2rem;
     background: ${({ theme }) => theme.COLORS.CYAN};
@@ -78,18 +82,14 @@ export default createGlobalStyle`
     margin: 0;
   }
 
-  ${MainFontFace};
   body, input, button, textarea {
-    font-family: 
-    'Sansation',
-    'Sansation-Italic',
-    'Sansation-Light',
-    'Sansation-Light-Italic',
-    'Sansation-Bold',
-    'Sansation-Bold-Italic',
-    sans-serif;
+    font-family: ${({ theme }) => theme.FONT.MAIN};
     font-size: ${({ theme }) => theme.COLORS.FSBODY};
     outline: none;
+  }
+
+  span {
+    font-family: ${({ theme }) => theme.FONT.HEADER};
   }
 
   a {

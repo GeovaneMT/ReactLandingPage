@@ -9,6 +9,12 @@ export const Container = styled.h2`
     display: block;
     font-weight: bold;
     color: ${({ theme }) => theme.COLORS.VIOLET};
+
+    &:nth-child(3) {
+      font-family: "billabong", sans-serif;
+      font-weight: 100;
+    }
+
     &:nth-child(2) {
       color: ${({ theme }) => theme.COLORS.ROSE};
       font-size: ${({ theme }) => theme.COLORS.FSSPAN};
