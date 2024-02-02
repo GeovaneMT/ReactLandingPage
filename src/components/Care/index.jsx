@@ -21,31 +21,27 @@ export const Care = ({
       <h3>Evtar:</h3>
       <br />
       <div>
-        <section>
-          <ul>
-            <li>{text1}</li>
-            <li>{text2}</li>
-          </ul>
-          <ul>
-            <li>{text3}</li>
-            <li>{text4}</li>
-          </ul>
-        </section>
-        <section>
-          <ul>
-            <li>{text5}</li>
-            <li>{text6}</li>
-          </ul>
-          <ul>
-            <li>{text7}</li>
-          </ul>
-        </section>
+        <ul>
+          <li>{text1}</li>
+          <li>{text2}</li>
+        </ul>
+        <ul>
+          <li>{text3}</li>
+          <li>{text4}</li>
+        </ul>
+        <ul>
+          <li>{text5}</li>
+          <li>{text6}</li>
+        </ul>
+        <ul>
+          <li>{text7}</li>
+        </ul>
       </div>
       <br />
       <p>
         Problemas com o seu pedido? Nos chame no WhatsApp
         <BackButton
-          icon={<PiWhatsappLogo />}
+          icon={<PiWhatsappLogo/>}
           text="Whatsapp"
           link="https://api.whatsapp.com/send/?phone=5519997844692&type=phone_number&app_absent=0"
           target="_blank"

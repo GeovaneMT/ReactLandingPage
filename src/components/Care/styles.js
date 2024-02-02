@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   color: ${({ theme }) => theme.COLORS.WHITE_50};
+  width: 50%;
   padding: 32px 0;
 
   > h2,
@@ -24,7 +25,6 @@ export const Container = styled.div`
 
     > button {
       width: max-content;
-
       > a {
         margin: 0;
       }
@@ -32,12 +32,8 @@ export const Container = styled.div`
   }
 
   > div {
-    gap: 2.4rem;
     display: flex;
-
-    > section {
-      gap: 2.4rem;
-    }
+    gap: 2.4rem;
 
     > ul > li {
       color: ${({ theme }) => theme.COLORS.WHITE};
@@ -45,11 +41,5 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: 769px) {
-    
-    width: 50%;
-
-    > div > section {
-        display: flex;
-      }
-    }
+  }
 `
