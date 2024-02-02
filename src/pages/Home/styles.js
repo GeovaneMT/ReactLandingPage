@@ -100,7 +100,8 @@ export const Container = styled.div`
               span {
                 ${({ theme }) => theme.COLORS.PINK};
                 color: ${({ theme }) => theme.COLORS.VIOLET};
-                font-family: ${({ theme }) => theme.FONT.HIGHLIGHTSNORMALITALIC};
+                font-family: ${({ theme }) =>
+                  theme.FONT.HIGHLIGHTSNORMALITALIC};
               }
             }
 
@@ -113,7 +114,7 @@ export const Container = styled.div`
               filter: drop-shadow(
                 0px 4px 4px ${({ theme }) => theme.COLORS.VIOLET}
               );
-              color: ${({ theme }) => theme.COLORS.VIOLET};
+              color: ${({ theme }) => theme.COLORS.ROSE};
             }
             li:last-child svg {
               opacity: 0;
