@@ -22,7 +22,7 @@ export const Item = ({
   return (
     <Container {...rest}>
       <main>
-        <div> {title}</div>
+        <span> {title}</span>
         <div>
           {text1}
           <span>{span1}</span>

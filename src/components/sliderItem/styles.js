@@ -27,7 +27,7 @@ export const Container = styled.div`
     gap: 4rem;
     width: 300px;
 
-    div:nth-child(1) {
+    > span {
       font-family: ${({ theme }) => theme.FONT.HEADER};
       font-size: ${({ theme }) => theme.COLORS.FSTITLE};
       color: ${({ theme }) => theme.COLORS.VIOLET};
@@ -69,7 +69,7 @@ export const Container = styled.div`
 
   &.styled {
     > main {
-      div {
+      div, span {
         animation: ${showContent} 0.6s ease-in-out forwards;
       }
 
