@@ -36,7 +36,7 @@ const CommonLinkContent = ({
       <PiArrowCircleRight />
     </span>
     <p style={{ fontSize: "1.8rem" }}>{title}</p>
-    <p style={{ fontSize: "1.8rem" }}>{fixedTitle}</p>
+    <p style={{ fontSize: "1.8rem" }}>{fixedTitle}{title}</p>
   </>
 )
 export const Button = ({

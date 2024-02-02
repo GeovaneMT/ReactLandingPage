@@ -47,19 +47,19 @@ export const Container = styled.button`
       height: 100%;
       transform: scaleX(1);
       transform-origin: right;
-      transition: all 0.6s ease-in-out;
+      transition: all 0.3s ease-in-out;
       z-index: -1;
       background: ${({ $backgroundColor, theme }) =>
         $backgroundColor || theme.COLORS.GRADIENT};
     }
 
     > p {
-      transition: all 0.6s ease-in-out;
+      transition: all 0.3s ease-in-out;
 
       &:nth-child(2) {
         opacity: 1;
         width: max-content;
-        transition-delay: 0.6s;
+        transition-delay: 0.3s;
       }
       &:last-child,
       &:nth-child(3) {
@@ -70,12 +70,12 @@ export const Container = styled.button`
     }
 
     span > svg {
-      transition: all 0.6s ease-in-out;
+      transition: all 0.3s ease-in-out;
 
       &:first-child {
         opacity: 1;
         width: max-content;
-        transition-delay: 0.6s;
+        transition-delay: 0.3s;
       }
 
       &:last-child {
@@ -97,7 +97,7 @@ export const Container = styled.button`
       &::before {
         transform: scaleX(0);
         transform-origin: right;
-        transition: all 0.6s ease-in-out;
+        transition: all 0.3s ease-in-out;
         opacity: 0;
       }
 
@@ -116,7 +116,7 @@ export const Container = styled.button`
       }
 
       > p {
-        transition: all 0.6s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
         &:nth-child(2) {
           opacity: 0;
@@ -126,13 +126,13 @@ export const Container = styled.button`
         &:nth-child(3) {
           opacity: 1;
           width: max-content;
-          transition-delay: 0.6s;
+          transition-delay: 0.3s;
         }
       }
     }
 
     span > svg {
-      transition: all 0.6s ease-in-out;
+      transition: all 0.3s ease-in-out;
 
       &:first-child {
         opacity: 0;
@@ -142,7 +142,7 @@ export const Container = styled.button`
       &:last-child {
         opacity: 1;
         width: max-content;
-        transition-delay: 0.6s;
+        transition-delay: 0.3s;
       }
     }
   }
