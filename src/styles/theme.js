@@ -3,6 +3,8 @@ export default {
     // font families
     MAIN: `'SF-Pro-Display-Regular', sans-serif`,
 
+    MAINLIGHT: `'SF-Pro-Display-Thin', sans-serif`,
+
     HEADER: `'Sansation-Bold', 'SF-Pro-Display-Regular', sans-serif`,
 
     HIGHLIGHTSNORMAL: `'Sansation-Regular', sans-serif`,

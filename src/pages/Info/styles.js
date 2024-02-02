@@ -3,8 +3,6 @@ import styled from "styled-components"
 import background from "../../assets/images/BG.png"
 import backgroundDark from "../../assets/images/BGdark.png"
 
-
-
 export const Container = styled.div`
   height: 100%;
   overflow: hidden;
@@ -25,19 +23,14 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
 
-    &:not(:last-child) > p {
+    > span > p {
       text-align: left;
+    }
 
-      > span {
-        font-weight: bold;
-        color: ${({ theme }) => theme.COLORS.WHITE};
-      }
-
-      &:nth-child(2) {
-        > span {
-          font-size: ${({ theme }) => theme.COLORS.FSSPAN};
-        }
-      }
+    &:not(:last-child) > p {
+      color: ${({ theme }) => theme.COLORS.WHITE};
+      font-size: ${({ theme }) => theme.COLORS.FSSPAN};
+      font-family: ${({ theme }) => theme.FONT.MAINLIGHT};
     }
   }
 

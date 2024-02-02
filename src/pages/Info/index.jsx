@@ -23,22 +23,20 @@ export const Info = () => {
         <Header text="Revele seu" span="Brilho!" />
 
         <div>
-          <Anchor text="Manifesto" />
+          <span>
+            <Anchor text="Manifesto" />
+          </span>
           <p>
-            <span>
-              A Bela Dona Semijoias destaca-se por oferecer acessórios de alta
-              qualidade a preços acessíveis, expressando a beleza única de cada
-              mulher.
-              <br />
-              <br />
-              Com uma abordagem personalizada e presença ativa nas redes
-              sociais, a marca incentiva as clientes a expressarem confiança e
-              autenticidade, convidando-as a serem protagonistas de suas
-              histórias.
-            </span>
+            A Bela Dona Semijoias destaca-se por oferecer acessórios de alta
+            qualidade a preços acessíveis, expressando a beleza única de cada
+            mulher.
+            <br />
+            <br />
+            Com uma abordagem personalizada e presença ativa nas redes sociais,
+            a marca incentiva as clientes a expressarem confiança e
+            autenticidade, convidando-as a serem protagonistas de suas
+            histórias.
           </p>
-
-          <p></p>
         </div>
 
         <Slider
@@ -60,7 +58,7 @@ export const Info = () => {
             },
             {
               icon: "",
-              iconAlt: <PiSealCheckFill  />,
+              iconAlt: <PiSealCheckFill />,
               title: "Missão",
               text1: "Oferecemos uma variedade de ",
               span1: "semijoias de alta qualidade. ",

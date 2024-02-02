@@ -2,12 +2,15 @@ import styled, { keyframes } from "styled-components"
 import { Sansation } from "../../styles/fonts"
 
 const showContent = keyframes`
+
   from {
     filter: blur(33px);
+    opacity: 0;
   }
+
   to {
     opacity: 1;
-    filter: blur(0) opacity(inherit);
+    filter: blur(0);
   }
 `
 
@@ -30,7 +33,7 @@ export const Container = styled.div`
     > span {
       font-family: ${({ theme }) => theme.FONT.HEADER};
       font-size: ${({ theme }) => theme.COLORS.FSTITLE};
-      color: ${({ theme }) => theme.COLORS.VIOLET};
+      color: ${({ theme }) => theme.COLORS.ROSE};
       justify-content: start;
       font-weight: bold;
       opacity: 0;
@@ -38,7 +41,7 @@ export const Container = styled.div`
 
     div:nth-child(2) {
       opacity: 0;
-      height: 90px;
+      color: ${({ theme }) => theme.COLORS.VIOLET};
     }
   }
 
@@ -48,7 +51,6 @@ export const Container = styled.div`
     border-radius: 20px;
     border: 2px solid white;
     transition: all 0.3s ease-in-out;
-    filter: opacity(0.5);
     opacity: 0;
     margin-left: 2rem;
 
@@ -69,7 +71,8 @@ export const Container = styled.div`
 
   &.styled {
     > main {
-      div, span {
+      div,
+      span {
         animation: ${showContent} 0.6s ease-in-out forwards;
       }
 
@@ -110,6 +113,7 @@ export const Container = styled.div`
     align-items: center;
     width: 100%;
     height: 100%;
+
     svg {
       width: 80%;
       height: 80%;
