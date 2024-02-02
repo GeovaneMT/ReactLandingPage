@@ -24,6 +24,7 @@ export const Container = styled.div`
 
     > button {
       width: max-content;
+
       > a {
         margin: 0;
       }
@@ -32,6 +33,11 @@ export const Container = styled.div`
 
   > div {
     gap: 2.4rem;
+    display: flex;
+
+    > section {
+      gap: 2.4rem;
+    }
 
     > ul > li {
       color: ${({ theme }) => theme.COLORS.WHITE};
@@ -39,10 +45,11 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: 769px) {
+    
     width: 50%;
 
-    > div {
-      display: flex;
+    > div > section {
+        display: flex;
+      }
     }
-  }
 `
