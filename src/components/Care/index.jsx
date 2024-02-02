@@ -35,9 +35,6 @@ export const Care = ({
       </div>
       <br />
       <p>
-        7 dias de Grantia por defeito de Fábrica. Não damos garantia do banho.
-      </p>
-      <p>
         Problemas com o seu pedido? Nos chame no WhatsApp
         <BackButton
           icon=""
