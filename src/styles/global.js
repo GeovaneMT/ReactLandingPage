@@ -94,6 +94,8 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
+    font-family: ${({ theme }) => theme.FONT.HIGHLIGHTS};
+
   }
 
   a, button {
