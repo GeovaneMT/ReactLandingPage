@@ -23,13 +23,20 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 0.8rem;
 
-    > button > a {
-      margin: 0;
+    > button {
+      width: max-content;
+      > a {
+        margin: 0;
+      }
     }
   }
 
   > div {
     display: flex;
     gap: 2.4rem;
+
+    > ul > li {
+      color: ${({ theme }) => theme.COLORS.WHITE};
+    }
   }
 `
