@@ -70,7 +70,7 @@ import {
 
 export const Billabong = css`
   @font-face {
-    font-family: "Billabong";
+    font-family: "Billabong-Custom";
     font-weight: 500;
     font-style: normal;
     src: url("${Billabongs}") format("opentype");
