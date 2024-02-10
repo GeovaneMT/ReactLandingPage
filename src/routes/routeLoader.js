@@ -10,14 +10,31 @@ export function useRouteLoader(location) {
     Promise.all([
       import("../pages/Home"),
       import("../pages/Info"),
+      import("../pages/PDF"),
       import("../pages/Contact"),
       import("../pages/Catalog"),
       import("../pages/404"),
     ])
-      .then(([{ Home }, { Info }, { Contact }, { Catalog }, { Error404 }]) => {
-        setComponents({ Home, Info, Contact, Catalog, Error404 })
-        setIsLoading(false)
-      })
+      .then(
+        ([
+          { Home },
+          { Info },
+          { PDF },
+          { Contact },
+          { Catalog },
+          { Error404 },
+        ]) => {
+          setComponents({
+            Home,
+            Info,
+            PDF,
+            Contact,
+            Catalog,
+            Error404
+          })
+          setIsLoading(false)
+        }
+      )
       .catch((error) => {
         console.error("Error loading components:", error)
       })
